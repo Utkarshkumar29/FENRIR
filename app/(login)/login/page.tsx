@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Login = () => {
     return (
         <div className="min-h-screen w-full bg-[#0B0F19] relative overflow-hidden">
@@ -68,7 +70,7 @@ const Login = () => {
                             <p className=" text-black  ">I agree to Apsˇs <span className=" cursor-pointer text-blue-500 underline ">Terms & Conditions</span> and acknowledge the <span className=" cursor-pointer text-blue-500 underline ">Privacy Policy</span></p>
                         </div>
                         <div className=" w-full flex flex-col gap-[16px] ">
-                            <button className=" cursor-pointer w-full bg-teal-500 text-white py-[8px] rounded-[100px] font-medium text-xl ">Create Account</button>   
+                            <Link href={"/dashboard"}><button className=" cursor-pointer w-full bg-teal-500 text-white py-[8px] rounded-[100px] font-medium text-xl ">Create Account</button></Link>
                             <div className=" flex gap-[12px] ">
                                 <button className=" cursor-pointer w-full  bg-black text-white py-[8px] rounded-[100px] font-medium text-xl "><i className="fab fa-apple"></i></button>   
                                 <button className=" cursor-pointer w-full  bg-mauve-300 text-white py-[8px] rounded-[100px] font-medium text-xl "><i className="fab fa-google"></i></button>   

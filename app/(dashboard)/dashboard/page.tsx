@@ -106,6 +106,13 @@ const Dashboard = () => {
                             <ScanRow key={scan.id} scan={scan} />
                         ))}
                     </div>
+                    <div className=" flex w-full items-center justify-between ">
+                        <span className=" text-gray-400 text-[12px] ">Showing 1 to 10 of 100 entries</span>
+                        <div className=" flex gap-4 ">
+                            <i class="fas fa-chevron-left p-[8px] border border-gray-200 text-gray-400 "></i>
+                            <i class="fas fa-chevron-right p-[8px] border border-gray-200 text-gray-400 "></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

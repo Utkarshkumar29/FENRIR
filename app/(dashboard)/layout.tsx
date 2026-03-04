@@ -9,9 +9,10 @@ const DashboardLayout = ({
   return (
     <div className="min-h-screen w-full bg-white flex">
       <SideBar />
-      <div className=" w-full min-h-full h-full flex flex-col  ">
-        <Navbar/>
-        <main className=" bg-[#F1F2F5] w-full h-full ">{children}</main>
+
+      <div className="ml-[300px] flex-1 flex flex-col">
+        <Navbar />
+        <main className="bg-[#F1F2F5] flex-1">{children}</main>
       </div>
     </div>
   );
